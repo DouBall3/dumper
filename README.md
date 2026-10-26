@@ -14,7 +14,7 @@ Each request is written to standard output, starting with an RFC 3339 timestamp 
 
 The log uses Go's parsed HTTP request representation; it is not a byte-for-byte capture of the network traffic. Requests must be valid HTTP for Go's HTTP server to handle them.
 
-CORS permits browser requests from `http://localhost:5173`, using GET, POST, PUT, PATCH, DELETE, HEAD, or OPTIONS and the `Content-Type` and `Authorization` headers. Preflight OPTIONS requests are logged and return `200 OK` like other requests.
+CORS permits browser requests from `*`, using GET, POST, PUT, PATCH, DELETE, HEAD, or OPTIONS and the `Content-Type` and `Authorization` headers. Preflight OPTIONS requests are logged and return `200 OK` like other requests.
 
 Build a standalone executable:
 
